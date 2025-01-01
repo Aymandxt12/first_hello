@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+.hello{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px 10px;
+    grid-template-rows: repeat(3, 100px);
+}
+.hello h1{
+    align-content: center;
+    margin: 1px;
+    text-align: center;
+    background-color: blue;
+}
+.hello h1:hover{
+    animation-name: first;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes first {
+    0% {
+        opacity: 100%;
+        color: black;
+    }
+    50% {
+        opacity: 70%;
+        color: red;
+    }
+    100% {
+        opacity: 100%;
+        color: black;
+    }
+}
+.ms{
+    background-color: aqua;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.ms button{
+    background-color: black;
+    border: 0px;
+    color: brown;
+    align-self: center;
+    height: min-content;
+}
